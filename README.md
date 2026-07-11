@@ -10,20 +10,20 @@ Built from a simple idea: we use objects every day without ever seeing what's in
 
 ## ✨ Features
 
-- 🖱️ Click any part to learn its purpose
-- 🤖 AI-generated explanations with Google Gemini
-- 🔊 Voice narration powered by ElevenLabs
-- ⚡ Fast, responsive 3D rendering
+- Click any part to learn its purpose
+- AI-generated explanations with Google Gemini
+- Voice narration powered by ElevenLabs
+- Fast, responsive 3D rendering
 
 ---
 
 ## 🛠️ Tech Stack
 
-- ⚛️ React
-- 🎮 Three.js
-- 🧰 Drei
-- 🤖 Google Gemini (`gemini-2.0-flash`)
-- 🎙️ ElevenLabs (`eleven_turbo_v2_5`)
+- React
+- Three.js
+- Drei
+- Google Gemini (`gemini-2.0-flash`)
+- ElevenLabs (`eleven_turbo_v2_5`)
 
 ---
 
@@ -35,7 +35,7 @@ Each object is described using simple data that defines:
 - assembled positions
 - exploded positions
 
-A single global **explode** value smoothly interpolates every component between assembled and exploded states, making it easy to add entirely new objects without changing the rendering logic.
+On clicking explode the part explodes and we can see how it works inside !!
 
 ---
 
@@ -62,7 +62,7 @@ vercel dev
 |----------|-------------|
 | `GEMINI_API_KEY` | Google Gemini API Key |
 | `ELEVENLABS_API_KEY` | ElevenLabs API Key |
-| `ELEVENLABS_VOICE_ID` | *(Optional)* Voice ID |
+| `ELEVENLABS_VOICE_ID` | *(Optional)* Voice ID (free tier allows two voices)|
 
 Without these keys, the application still works using built-in descriptions and the browser's speech synthesis.
 
